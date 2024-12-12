@@ -40,6 +40,37 @@
         return (<h1>Good Morning, {props.name}</h1>)
       }
       <GreetComponent name="Lolita"/>
+
+## Life Cycle of a Component
+1. Constructed
+2. Mounted
+3. Updated
+4. Un-mounted
+
+## Hooks
+- All the hooks start with 'use'.
+
+1. useState Hook:
+- A state of a component is a variable that holds some information that may change over the lifetime of the component.
+- Whenever the value of the state changes, the component re-renders itself with updated value.
+- useState hook returns an array of size 2. 0th index contains the value of the variable (state) and 1st index contains the function used to update the value of the variable.
+- A state is local to its component.
+
+      import React, { useState } from "react";
+  
+      const CounterComponent = ()=>{
+        const [count, setCount]=useState(0);
+        return(
+          <>
+          <p>Count is {count}</p>
+          <button onClick={()=>setCount(count+1)}>Increment</button>
+          </>
+        )
+      }
+
+  2. useEffect Hook:
+  
+
   
 
   
