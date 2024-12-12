@@ -68,7 +68,7 @@
         )
       }
 
-  2. useEffect Hook:
+2. useEffect Hook:
   
 
   
