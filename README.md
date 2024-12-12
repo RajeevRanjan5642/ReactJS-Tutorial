@@ -42,10 +42,10 @@
       <GreetComponent name="Lolita"/>
 
 ## Life Cycle of a Component
-1. Constructed
-2. Mounted
-3. Updated
-4. Un-mounted
+1. Construction
+2. Mount
+3. Update
+4. Un-mount
 
 ## Hooks
 - All the hooks start with 'use'.
