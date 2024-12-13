@@ -80,9 +80,14 @@
 
 2. The following snippet runs when the component is updated or the state changes.
 
-       useEffect(()=>{
-        console.log("Count is updated", count);
-       },[count]);
+        const [time, setTime]=useState(0);
+  
+        useEffect(()=>{
+            const timer = setInterval(()=>setTime(time+1),1000);
+            return function(){
+                clearInterval(timer);
+            }
+        },[time]);
    The state is passed in the dependency array.
 
 3. The function that is returned by the useEffect hook runs only when the component is unmounted.
