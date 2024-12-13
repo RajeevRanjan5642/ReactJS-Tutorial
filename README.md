@@ -69,8 +69,28 @@
       }
 
 2. useEffect Hook:
+- Run code during the change in lifecycle of a component.
+- The useEffect hook takes two arguments : callback function, dependency array.
   
+1. The following snippet runs only when the component is mounted for the first time.
+   
+        useEffect(()=>{
+          console.log("Counter component is mounted");
+        },[])
 
+2. The following snippet runs when the component is updated or the state changes.
+
+       useEffect(()=>{
+        console.log("Count is updated", count);
+       },[count]);
+   The state is passed in the dependency array.
+
+3. The function that is returned by the useEffect hook runs only when the component is unmounted.
+
+       useEffect(()=>{
+          console.log("Counter component is mounted");
+          return (console.log("Counter component is unmounted")
+        },[])
   
 
   
