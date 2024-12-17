@@ -96,6 +96,10 @@
           console.log("Counter component is mounted");
           return (console.log("Counter component is unmounted")
         },[])
+
+3. useContext
+
+
   
 
   
